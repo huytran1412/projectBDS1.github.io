@@ -3,6 +3,7 @@
 <head>
     <title>My First Web Page</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="js/main.js">
     <script src="https://kit.fontawesome.com/05339abca5.js" crossorigin="anonymous"></script>
@@ -13,43 +14,48 @@
             <img src="https://aeland.com.vn/wp-content/uploads/2021/01/logo-aeland.png" alt="Logo" class="header__logo" width="180px" height="50px"> 
         </div>
 
-        <a href="http://www.google.com">
-            <img width="350px" height="40px" alt="bang-hang" loading="lazy" srcset="https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1.gif 1200w, https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1-768x77.gif 768w">
-        </a>
-
-        <div class="header__nav">
-            <a href="index.html">Trang Chủ</a>
+        <div class="header-mobile">
+            <a href="http://www.google.com">
+                <img width="350px" height="40px" alt="bang-hang" loading="lazy" srcset="https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1.gif 1200w, https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1-768x77.gif 768w">
+            </a>
+            <button class="header__nav__btn-mobile" data-toggle="collapse" data-target="#navigation"><i class="fa-solid fa-bars"></i></button>    
         </div>
-
-        <div class="header__nav pos-style-1 hover-style">
-            <a>Dự Án <i class="fa-solid fa-sort-down"></i></a>
-
-            <div class="header__nav__title pos-style-2 container-column">
-                <a href="du-an.html">Dự Án</a>
-                <a href="du-an.html">Dự Án</a>
-                <a href="du-an.html">Dự Án</a>
-                <a href="du-an.html">Dự Án</a>
-                <a href="du-an.html">Dự Án</a>
+        
+        <div class="header__nav__container container">
+            <div class="header__nav">
+                <a href="index.html">Trang Chủ</a>
             </div>
-
-        </div>
-
-        <div class="header__nav pos-style-1 hover-style">
-            <a>Qui Hoạch <i class="fa-solid fa-sort-down"></i></a>
-
-            <div class="header__nav__title pos-style-2 container-column">
-                <a href="qui-hoach.html">Qui Hoạch</a>
-                <a href="qui-hoach.html">Qui Hoạch</a>
-                <a href="qui-hoach.html">Qui Hoạch</a>
-                <a href="qui-hoach.html">Qui Hoạch</a>
-                <a href="qui-hoach.html">Qui Hoạch</a>
+    
+            <div class="header__nav pos-style-1 hover-style">
+                <a>Dự Án <i class="fa-solid fa-sort-down"></i></a>
+    
+                <div class="header__nav__title pos-style-2 container-column">
+                    <a href="du-an.html">Dự Án</a>
+                    <a href="du-an.html">Dự Án</a>
+                    <a href="du-an.html">Dự Án</a>
+                    <a href="du-an.html">Dự Án</a>
+                    <a href="du-an.html">Dự Án</a>
+                </div>
+    
+            </div>
+    
+            <div class="header__nav pos-style-1 hover-style">
+                <a>Qui Hoạch <i class="fa-solid fa-sort-down"></i></a>
+    
+                <div class="header__nav__title pos-style-2 container-column">
+                    <a href="qui-hoach.html">Qui Hoạch</a>
+                    <a href="qui-hoach.html">Qui Hoạch</a>
+                    <a href="qui-hoach.html">Qui Hoạch</a>
+                    <a href="qui-hoach.html">Qui Hoạch</a>
+                    <a href="qui-hoach.html">Qui Hoạch</a>
+                </div>
+            </div>
+    
+            <div class="header__nav">
+                <a href="news.html">Tin Tức Tổng Hợp</a>
             </div>
         </div>
-
-        <div class="header__nav">
-            <a href="news.html">Tin Tức Tổng Hợp</a>
-        </div>
-
+        
     </header>
 
     <div class="content-image">
@@ -57,7 +63,7 @@
     </div>
 
     <section class="content-container container pad-t-b">
-        <div class="content-wrapper-1 container gr">
+        <div class="content-wrapper-1 container">
             <h2>Kênh Bất động sản</h2>
             <p>Công ty cổ phần địa ốc AE là đơn vị chuyên tư vấn mua bán – cho thuê – đầu tư các dự án bất động sản khu vực Phía Tây, Hà Nội. Tập trung chủ đạo là phân khúc đất nền mà tiêu biểu như:Với tiêu chí Sologan “Khách Hàng Là Anh Em”. Chúng tôi luôn cố gắng mong muốn mang lại cho bạn dù mua tiêu dùng hay để đầu tư một dịch vụ an toàn, đầy đủ cũng như môi trường tư vấn thân thiện, năng động như Anh Em đến với quý khách hàng.</p>
         </div>
@@ -71,18 +77,35 @@
         <div class="project-wrapper container-column">
             <h2>Dự án nổi bật</h2>
             <div class="project-list container">
-                <div class="project-item-1 container-column">
-                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-1" cover width="auto" height="auto"/>
+                <div class="project-item-1 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-1" cover width="100% height="auto"/>
                     <h3>Nam An Khanh</h3>
                     <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 </div>
-                <div class="project-item-2 container-column">
-                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-2" cover width="auto" height="auto"/>
+                <div class="project-item-2 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-2" cover width="100%" height="auto"/>
                     <h3>Nam An Khanh</h3>
                     <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 </div>
-                <div class="project-item-3 container-column">
-                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-3" cover width="auto" height="auto"/>
+                <div class="project-item-3 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-3" cover width=100% height="auto"/>
+                    <h3>Nam An Khanh</h3>
+                    <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
+                </div>
+            </div>
+            <div class="project-list container">
+                <div class="project-item-1 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-1" cover width="100% height="auto"/>
+                    <h3>Nam An Khanh</h3>
+                    <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
+                </div>
+                <div class="project-item-2 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-2" cover width="100%" height="auto"/>
+                    <h3>Nam An Khanh</h3>
+                    <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
+                </div>
+                <div class="project-item-3 col-3 container-column">
+                    <img src="https://aeland.com.vn/wp-content/uploads/elementor/thumbs/nam-an-khanh-sudico-pdkql6qd4xwjqtfyos9cibe5xvixsohb83z3pci6d4.jpg" alt="project-image-3" cover width=100% height="auto"/>
                     <h3>Nam An Khanh</h3>
                     <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 </div>
@@ -96,7 +119,7 @@
                 <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
             </div>
             <div class="youtube-wrapper-1-2 container-column">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
             </div>
         </div>
 
@@ -114,14 +137,17 @@
     </section>
 
     <section class="news-container container-column pad-t-b">
-        <div class="news-wrapper-container container">
-            <div class="news-wrapper container-column">
+        <h2>Tin Tức Dự Án BĐS</h2>
+        <div class="news-wrapper-container width-100 container">
+            <div class="news-wrapper width-100 container-column">
                 <div class="news-header">
-                    <h2>Tin tức</h2>
+                    <h2>Tin Dự Án</h2>
                 </div>
                 <div class="news-image">
                     <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="300" height="100"/>
                 </div>
+                <a href="http://"><h3>Đất Dịch Vụ Kim Chung</h3></a>
+                <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 <div class="news-next-wrapper container-column">
                     <div class="news-next container">
                         <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="150px" height="50px"/>
@@ -138,13 +164,15 @@
                 </div>
             </div>
     
-            <div class="news-wrapper container-column">
+            <div class="news-wrapper width-100 container-column">
                 <div class="news-header">
-                    <h2>Tin tức</h2>
+                    <h2>Kiến Thức Bất Động Sản</h2>
                 </div>
                 <div class="news-image">
                     <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="300" height="100"/>
                 </div>
+                <a href="http://"><h3>Cách Chống Nắng Cho Nhà Hướng Tây</h3></a>
+                <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 <div class="news-next-wrapper container-column">
                     <div class="news-next container">
                         <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="150px" height="50px"/>
@@ -161,13 +189,15 @@
                 </div>
             </div>
     
-            <div class="news-wrapper container-column">
+            <div class="news-wrapper width-100 container-column">
                 <div class="news-header">
-                    <h2>Tin tức</h2>
+                    <h2>Qui Hoạch</h2>
                 </div>
                 <div class="news-image">
                     <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="300" height="100"/>
                 </div>
+                <a href=""><h3>Qui Hoạch Khu Đô Thị Vệ Tinh Hòa Lạc</h3></a>
+                <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 <div class="news-next-wrapper container-column">
                     <div class="news-next container">
                         <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="150px" height="50px"/>
@@ -229,7 +259,7 @@
             </div>
             <div class="footer-wrapper-right container-column">
                 <h3>Đăng ký nhận tin</h3>
-                <p>Đăng ký để nhận những thông tin mới nhất từ chúng tôi</p>
+                <a class="pad-t-b">Đăng ký để nhận những thông tin mới nhất từ chúng tôi</a>
                 <div class="footer-wrapper-right-input container">
                     <input type="text" placeholder="Nhập email của bạn"/>
                     <button>Đăng ký</button>

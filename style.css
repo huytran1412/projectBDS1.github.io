@@ -199,7 +199,8 @@ footer{
 
     .header__nav__btn-mobile{
         display: block;
-        font-size: 30px;
+        font-size: 24px;
+        margin: 0 0 5.9px 0;
         color: rgb(243, 105, 13);
         cursor: pointer;
         border-radius: 5px;

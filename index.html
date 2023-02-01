@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" initial-scale=1.0>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="js/main.js">
+    <link rel="stylesheet" href="dm.js">    
     <script src="https://kit.fontawesome.com/05339abca5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +18,7 @@
             <a href="http://www.google.com">
                 <img width="350px" height="40px" alt="bang-hang" loading="lazy" srcset="https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1.gif 1200w, https://aeland.com.vn/wp-content/uploads/2021/02/bang-hang-ae-land-1-768x77.gif 768w">
             </a>
-            <button class="header__nav__btn-mobile" data-toggle="collapse" data-target="#navigation"><i class="fa-solid fa-bars"></i></button>    
+            <button class="header__nav__btn-mobile" onclick="openNav()"><i class="fa-solid fa-bars"></i></button>    
         </div>
         
         <div class="header__nav__container container">
@@ -129,10 +129,12 @@
             <form>
                 <input class="input-style" type="text" name="name" placeholder="Họ và tên">
                 <input class="input-style" type="text" name="phone" placeholder="Số điện thoại">
-                <input class="input-style" type="text" name="email" placeholder="Email">
-                <input class="input-style" type="text" name="address" placeholder="Địa chỉ">
                 <input class="submit-style" type="submit" name="submit" value="Đăng kí">
             </form>
+            <form method="post" action="subscriberform.php">
+                <textarea name="message" >ten</textarea>
+                <input type="submit">
+                </form>
         </div>
     </section>
 
@@ -196,7 +198,7 @@
                 <div class="news-image">
                     <img src="https://sudicosd.com/mediacenter/media/images/2247/shopstore/2247/1/s1000_1000/batdongsan2018mvka-1544757500.jpg" alt="news-image" cover width="300" height="100"/>
                 </div>
-                <a href=""><h3>Qui Hoạch Khu Đô Thị Vệ Tinh Hòa Lạc</h3></a>
+                <a href="http://"><h3>Qui Hoạch Khu Đô Thị Vệ Tinh Hòa Lạc</h3></a>
                 <p>Đất nền Nam An Khanh, Phú Mỹ Hưng, Quận 7, TP.HCM</p>
                 <div class="news-next-wrapper container-column">
                     <div class="news-next container">
@@ -228,13 +230,13 @@
             <div class="footer-wrapper-left container">
                 <div class="footer-wrapper-left-top container ">
                     <div class="footer-wrapper-left-top-left container-column">
-                        <h3>Liên hệ</h3>
+                        <h3 class="title-style">Liên hệ</h3>
                         <p>Địa chỉ: 123 Nguyễn Văn Linh, Phường 7, Quận Gò Vấp, TP.HCM</p>
                         <p>Điện thoại: 0909 999 999</p>
                         <p>Email:email@example.com</p>
                     </div>
                     <div class="footer-wrapper-left-top-right container-column">
-                        <h3>Thông tin</h3>
+                        <h3 class="title-style">Thông tin</h3>
                         <p>Giới thiệu</p>
                         <p>Điều khoản</p>
                         <p>Chính sách</p>
@@ -242,13 +244,13 @@
                 </div>
                 <div class="footer-wrapper-left-bottom container">
                     <div class="footer-wrapper-left-bottom-left container-column">
-                        <h3>Chính sách</h3>
+                        <h3 class="title-style">Chính sách</h3>
                         <p>Chính sách bảo mật</p>
                         <p>Chính sách hoàn tiền</p>
                         <p>Chính sách đổi trả</p>
                     </div>
                     <div class="footer-wrapper-left-bottom-right container-column">
-                        <h3>Chăm sóc khách hàng</h3>
+                        <h3 class="title-style">Chăm sóc khách hàng</h3>
                         <p>Hotline: 0909 999 999</p>
                         <p>Email:
                             <a href="mailto:email@example.com" target="_blank">
@@ -258,7 +260,7 @@
                 </div>
             </div>
             <div class="footer-wrapper-right container-column">
-                <h3>Đăng ký nhận tin</h3>
+                <h3 class="title-style">Đăng ký nhận tin</h3>
                 <a class="pad-t-b">Đăng ký để nhận những thông tin mới nhất từ chúng tôi</a>
                 <div class="footer-wrapper-right-input container">
                     <input type="text" placeholder="Nhập email của bạn"/>
@@ -267,7 +269,52 @@
             </div>
         </div>
     </footer>
+    <div class="tet">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Trang Chủ</a>
+            <a class="dropdown-btn">Dự Án 
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+                <a href="#">Dự Án 1</a>
+                <a href="#">Dự Án 2</a>
+                <a href="#">Dự Án 3</a>
+            </div>
+            <a class="dropdown-btn">Qui Hoạch 
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <div class="dropdown-container">
+                <a href="#">Qui Hoạch 1</a>
+                <a href="#">Qui Hoạch 2</a>
+                <a href="#">Qui Hoạch 3</a>
+            </div>
+            <a href="#">Tin Tức Tổng Hợp</a>
+          </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
 
+        for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+        }
+    </script>
 </body>
 
 </html>

@@ -53,6 +53,11 @@ body, html{
     cursor: pointer;
 }
 
+.title-style{
+    margin-left: 20px;
+    border-bottom: 2px solid white;
+}
+
 .col-3{
     width: 33.33%;
     padding: 0 10px;
@@ -162,13 +167,13 @@ body, html{
     width: 100px;
     align-items: center;
     font-size: 50px;
-    margin-left: 50px;
+    margin-left: 32px;
 }
 
 footer{
     width: 100%;
     height: auto;
-    background-color: rgb(23, 39, 113);
+    background-color: rgb(24, 44, 135);
     color: #fff;
 }
 
@@ -187,6 +192,51 @@ footer{
     display: none;
 }
 
+/* Path: menu-mobile.css */
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-left: 0.00001px solid rgba(0, 0, 0, 0.26);
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidepanel a i{
+    margin-right: 20px;
+     float: right;
+    padding-bottom: 5px;
+  }
+  
+  .sidepanel a:hover {
+    color: #fd0a0a;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .dropdown-container {
+    display: none;
+    padding-left: 8px;
+  }
+
 /* Path: responsive.css */
 
 @media (max-width: 549px){
@@ -200,8 +250,8 @@ footer{
     .header__nav__btn-mobile{
         display: block;
         font-size: 24px;
-        margin: 0 0 5.9px 0;
-        color: rgb(243, 105, 13);
+        margin: 0 0 5.9px 5.5px;
+        color: rgba(243, 105, 13, 0.947);
         cursor: pointer;
         border-radius: 5px;
         box-shadow: 1px 1px 1px 1px rgba(5, 9, 241, 0.952);
@@ -257,7 +307,7 @@ footer{
         margin-bottom: 5px;
     }
     .youtube-container .youtube-wrapper-2 input[type="submit"]{
-        margin-left:9.61%;
+        margin-left:9.99%;
     }
     .youtube-container .youtube-wrapper-1 .youtube-wrapper-1-2 iframe{
         width: fit-content;

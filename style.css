@@ -73,12 +73,12 @@ body, html{
 
 .pos-style-2{
     position: absolute;
-    bottom: -329px;
+    bottom: -328px;
     left: 0;
     z-index: 1;
     background-color: #fff;
     width: auto;
-    height: 300px;
+    height: 299px;
     display: none;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.463);
@@ -168,6 +168,10 @@ body, html{
     align-items: center;
     font-size: 50px;
     margin-left: 32px;
+}
+
+.news-container .partner-wrapper{
+    min-height: auto;
 }
 
 footer{
@@ -329,6 +333,7 @@ footer{
     }
 }
 
+  
 
 
 

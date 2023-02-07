@@ -1,0 +1,66 @@
+.main {
+    height: 100vh;
+    background-color: rgba(23, 1, 1, 0);
+}
+
+.main-content {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 135px;
+    text-align: center;
+}
+
+.main img {
+    width: 60%;
+    height: auto;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 20%;
+    background-color: lightgray;
+    padding: 90px 20px;
+    float: left;
+    position: sticky;
+    top: 0;
+    bottom: 50vh;
+  }
+
+  .main-content-2 {
+    width: 15%;
+    margin-right: 5%;
+    background-color: lightgray;
+    padding: 90px 20px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    top: 100px; 
+    bottom: 0; 
+}
+
+@media (max-width: 549px){
+    .sidebar, .main-content-2 {
+        width: 100%;
+        position: static;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
